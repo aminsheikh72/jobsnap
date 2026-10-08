@@ -1,44 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jobsnap</title>
-      <link href="./src/output.css" rel="stylesheet">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="./src/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
+
 <body>
     <div class="w-full min-h-screen">
-<div class="md:bg-[url(/src/assets/bg-img.avif)] bg-[url(/src/assets/bg-img-m.jpg)]  bg-center bg-no-repeat bg-cover ">
+        <div
+            class="md:bg-[url(/src/assets/bg-img.avif)]  bg-[url(/src/assets/bg-img-m.jpg)]  bg-center bg-no-repeat bg-cover ">
             <nav class="w-full p-6 md:py-0 md:p-3 md:px-10 flex items-center justify-center flex-col md:flex-row">
-            <div class="md:w-[33%] w-full"><h1 class="text-3xl text-center"><i class="fa-solid fa-briefcase"></i>JOBSNAP</h1></div>
-            <div class="w-full md:w-[33%] ">
-                <ul class="flex items-center justify-evenly w-full my-5 text-xl md:text-lg">
-                    <li>Home</li>
-                    <li>Explore</li>
-                    <li>Post a job</li>
-                    <li>Search</li>
-                </ul>
+                <div class="md:w-[33%] w-full">
+                    <h1 class="text-3xl text-center mr-0 md:mr-30"><i class="fa-solid fa-briefcase"></i>JOBSNAP</h1>
+                </div>
+                <div class="w-full md:w-[33%] ">
+                    <ul class="flex items-center justify-evenly w-full my-5 text-xl md:text-lg">
+                        <li>Home</li>
+                        <li>Explore</li>
+                        <li>Post a job</li>
+                        <li>Search</li>
+                    </ul>
+                </div>
+                <div class="w-full md:w-[33%] flex items-center justify-center md:items-center md:justify-end">
+                    <button class="px-7 py-3 bg-black text-white rounded-md border-none">Log in</button>
+                </div>
+            </nav>
+            <div
+                class="w-full md:h-screen h-110 flex items-center justify-start mt-20 md:mt-0 md:justify-center flex-col">
+                <h1
+                    class="md:text-6xl text-4xl font-bold text-center md:w-140 w-full px-6 md:px-0 leading-10 md:leading-16">
+                    Over <span class="text-blue-500">5,000 jobs</span> are waiting for you</h1>
+                <p class="mt-5 text-center font-medium">Work with the best companies <br>hire the experienced
+                    professionals</p>
+                <div
+                    class="md:w-[45%] w-[80%] flex flex-col md:flex-row items-center justify-center mt-5 border relative rounded-md">
+                    <input class="w-full px-4 outline-0 py-4 md:py-3" type="text"
+                        placeholder="What are you looking for">
+                    <input class="w-full px-4 py-4 md:py-3 border-t md:border-t-0 outline-0  border-l h-full"
+                        type="text" placeholder="Enter a location">
+                    <button
+                        class="px-4 py-2 rounded-sm bg-black text-white md:absolute md:right-1 md:bottom-1 md:flex hidden">Search</button>
+                </div>
+                <button class="w-[80%] mt-4 bg-black text-white py-3 rounded-md md:hidden">Search</button>
             </div>
-            <div class="w-full md:w-[33%] flex items-center justify-center md:items-center md:justify-end">
-                <button class="px-7 py-3 bg-black text-white rounded-md border-none">Log in</button>
-            </div>
-        </nav>
-        <div class="w-full md:h-screen h-110 flex items-center justify-start mt-20 md:mt-0 md:justify-center flex-col">
-            <h1 class="md:text-6xl text-4xl font-bold text-center md:w-140 w-full px-6 md:px-0 leading-10 md:leading-16">Over <span class="text-blue-500">5,000 jobs</span> are waiting for you</h1>
-            <p class="mt-5 text-center font-medium">Work with the best companies <br>hire the experienced professionals</p>
-            <div class="md:w-[45%] w-[80%] flex flex-col md:flex-row items-center justify-center mt-5 border relative rounded-md">
-                <input class="w-full px-4 outline-0 py-4 md:py-3" type="text" placeholder="What are you looking for">
-                <input class="w-full px-4 py-4 md:py-3 border-t md:border-t-0 outline-0  border-l h-full" type="text" placeholder="Enter a location">
-                <button class="px-4 py-2 rounded-sm bg-black text-white md:absolute md:right-1 md:bottom-1 md:flex hidden">Search</button>
-            </div><button class="w-[80%] mt-4 bg-black text-white py-3 rounded-md md:hidden">Search</button>
+
         </div>
-
-</div>
-
+        <!-- header sec end -->
+        <!-- second sec -->
+        <h1 class="text-center text-3xl md:text-5xl font-medium mt-10">Most popular categories</h1>
+        <div class="grid grid-cols-2 md:grid-cols-4 md:px-30 px-0  w-full [&>div]:border [&>div]:rounded-sm py-8 [&>div]:py-9 gap-3 min-h-96 p-5">
+            <div class="w-full bg-white border p-4 ">
+                <div class="bg-[#BCEEE0] rounded-full w-10 h-10 flex items-center justify-center">
+                    <i class="fa-solid fa-dollar-sign"></i>
+                </div>
+                <h1 class="my-2 text-2xl font-medium">
+                    Finance
+                </h1>
+                <p>1,720 posting</p>
+            </div>
+            <div class="w-full bg-white border p-4 ">
+                <div class="bg-[#BCEEE0] rounded-full w-10 h-10 flex items-center justify-center">
+                    <i class="fa-solid fa-dollar-sign"></i>
+                </div>
+                <h1 class="my-2 text-2xl font-medium">
+                    Finance
+                </h1>
+                <p>1,720 posting</p>
+            </div>
+            <div class="w-full bg-white border p-4 ">
+                <div class="bg-[#BCEEE0] rounded-full w-10 h-10 flex items-center justify-center">
+                    <i class="fa-solid fa-dollar-sign"></i>
+                </div>
+                <h1 class="my-2 text-2xl font-medium">
+                    Finance
+                </h1>
+                <p>1,720 posting</p>
+            </div>
+            <div class="w-full bg-white border p-4 ">
+                <div class="bg-[#BCEEE0] rounded-full w-10 h-10 flex items-center justify-center">
+                    <i class="fa-solid fa-dollar-sign"></i>
+                </div>
+                <h1 class="my-2 text-2xl font-medium">
+                    Finance
+                </h1>
+                <p>1,720 posting</p>
+            </div >
+            <div class="w-full bg-white border p-4 ">
+                <div class="bg-[#BCEEE0] rounded-full w-10 h-10 flex items-center justify-center">
+                    <i class="fa-solid fa-dollar-sign"></i>
+                </div>
+                <h1 class="my-2 text-2xl font-medium">
+                    Finance
+                </h1>
+                <p>1,720 posting</p>
+            </div>
+            <div class="w-full bg-white border p-4 ">
+                <div class="bg-[#BCEEE0] rounded-full w-10 h-10 flex items-center justify-center">
+                    <i class="fa-solid fa-dollar-sign"></i>
+                </div>
+                <h1 class="my-2 text-2xl font-medium">
+                    Finance
+                </h1>
+                <p>1,720 posting</p>
+            </div>
+            <div class="w-full bg-white border p-4 ">
+                <div class="bg-[#BCEEE0] rounded-full w-10 h-10 flex items-center justify-center">
+                    <i class="fa-solid fa-dollar-sign"></i>
+                </div>
+                <h1 class="my-2 text-2xl font-medium">
+                    Finance
+                </h1>
+                <p>1,720 posting</p>
+            </div>
+            <div class="w-full bg-white border p-4 ">
+                <div class="bg-[#BCEEE0] rounded-full w-10 h-10 flex items-center justify-center">
+                    <i class="fa-solid fa-dollar-sign"></i>
+                </div>
+                <h1 class="my-2 text-2xl font-medium">
+                    Finance
+                </h1>
+                <p>1,720 posting</p>
+            </div>
+        </div>
 
 
     </div>
-    
+
 </body>
+
 </html>
